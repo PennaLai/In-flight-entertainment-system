@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="436.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.view.MusicPageController">
+   <children>
+      <AnchorPane id="userPane" fx:id="musicPane" layoutX="6.0" prefHeight="267.0" prefWidth="640.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label id="musictitle" fx:id="musicTitle" alignment="CENTER" layoutX="6.0" layoutY="34.0" prefHeight="187.0" prefWidth="624.0" text="Music" textFill="WHITE">
+               <font>
+                  <Font name="Webdings" size="40.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="LoopPlayback" layoutX="443.0" layoutY="217.0" prefHeight="58.0" prefWidth="197.0" text="单曲循环" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></JFXToggleButton>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="MusicPlayButton" layoutX="295.0" layoutY="300.0" onAction="#handleMusic" prefHeight="50.0" prefWidth="50.0" styleClass="musicbutton" text="&gt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="390.0" layoutY="300.0" onAction="#nextSong" prefHeight="50.0" prefWidth="50.0" styleClass="musicbutton" text="&gt;|" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="200.0" layoutY="300.0" onAction="#previousSong" prefHeight="50.0" prefWidth="50.0" styleClass="musicbutton" text="|&lt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="MusicPlayTime" layoutX="40.0" layoutY="373.0" prefHeight="27.0" prefWidth="105.0" text="00:00/00:00">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="498.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/icon/sound1.png" />
+         </image>
+      </ImageView>
+      <JFXSlider fx:id="MusicVolume" layoutX="520.0" layoutY="380.0" onMousePressed="#handleClickMusicVolume" prefHeight="14.0" prefWidth="80.0" />
+      <JFXSlider fx:id="musicSlider" layoutX="155.0" layoutY="380.0" onMousePressed="#handleClickMusicBar" prefHeight="14.0" prefWidth="330.0" value="1.0" />
+   </children>
+</AnchorPane>

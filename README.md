@@ -1,42 +1,48 @@
-# In-flight-entertainment-system
-Java2 Group Project
+In-flight-entertainment-system 航空娱乐系统
+-------------
 
-### 实现功能
+>项目背景: 此项目为2018年春季 SUSTech Java2(CS209) 课程的小组项目  
+>作用场景: 能够在航空飞机的可触屏固定大小的内嵌式电脑上运行的可满足乘客基本娱乐需求的软件系统。
 
-  - 多语言
+### 示例:   
+- 主界面:   
+![主界面不见了](https://github.com/Airine/In-flight-entertainment-system/blob/master/readme_src/main.gif)
+- 视频播放界面:  
+![视频界面不见了](https://github.com/Airine/In-flight-entertainment-system/blob/master/readme_src/video.gif)
+- 音乐播放界面:  
+![音乐界面不见了](https://github.com/Airine/In-flight-entertainment-system/blob/master/readme_src/music.gif)
+- 个性化边栏:  
+![个性化边栏不见了](https://github.com/Airine/In-flight-entertainment-system/blob/master/readme_src/drawer.gif)  
 
-    实现方式：存在TXT文件中用多个文件存选项名字
 
-    eg: fileName = "English"+".txt";
+### 特性
+- 个性化界面与多语言
 
-  - 视频播放
+- 用户数据库与网络爬虫
 
-    文件管理（增删）
+- 虚拟键盘与触控滑动
 
-    跳出视频界面自动暂停
+### 原理说明
+(待补充)
 
-  - 音乐播放
+### 下载安装
 
-    跳出音乐界面继续播放
+这不是个Android项目,目前仅支持intellij IDE导入项目的方法测试使用。  
+>下个版本将完成项目打包
 
-  - 意外退出
+### 使用方法
+(待补充)
 
-    意外退出时记录程序进度（log.txt）
+### 注意事项
+项目代码中不包含建表操作，只能使用项目中的初始数据库(sqlite)
 
-    如果 log.txt 中 recover = true 则提示“是否要恢复”
+### TODO
+- 打包成可运行软件
+- 添加记忆功能(记录关闭前播放的影片及进度)
+- 添加游戏板块并添加贪吃蛇游戏
+- 歌词功能
+- 真正实现充钱和给开发者留言功能
 
-  - GUI
+## License
 
-    界面设计
-
-    各种附加服务（叫空姐、喝饮料、调空调、充钱）
-
-    时间显示
-
-    事件链接（与负责特定功能的人沟通）
-
-      - 键盘事件 与 鼠标事件
-
-      - 界面跳转
-
-      - 模拟触屏
+MIT
